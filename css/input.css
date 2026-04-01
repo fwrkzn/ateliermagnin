@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 15% 8%;
+  --foreground: 40 20% 92%;
+  --card: 220 12% 12%;
+  --card-foreground: 40 20% 92%;
+  --popover: 220 12% 12%;
+  --popover-foreground: 40 20% 92%;
+  --primary: 8 75% 52%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 10% 18%;
+  --secondary-foreground: 40 20% 92%;
+  --muted: 220 10% 16%;
+  --muted-foreground: 220 10% 55%;
+  --accent: 35 90% 55%;
+  --accent-foreground: 220 15% 8%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 220 10% 20%;
+  --input: 220 10% 20%;
+  --ring: 8 75% 52%;
+  --radius: 0.375rem;
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --gradient-hero: linear-gradient(135deg, hsl(8 75% 52% / 0.15), hsl(35 90% 55% / 0.08));
+  --gradient-dark: linear-gradient(180deg, hsl(220 15% 8%), hsl(220 12% 5%));
+  --shadow-glow: 0 0 40px hsl(8 75% 52% / 0.2);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-color: hsl(var(--border));
+}
+
+body {
+  margin: 0;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+/* ── Page Transition Overlay ── */
+.page-transition-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  display: flex;
+}
+
+.page-transition-overlay .overlay-slice {
+  flex: 1;
+  background: hsl(var(--primary));
+  transform: scaleY(1);
+  transform-origin: top;
+  will-change: transform;
+}
+
+/* Entry: slices shrink away to reveal page */
+.page-transition-overlay.entering .overlay-slice {
+  animation: sliceReveal 0.55s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.page-transition-overlay.entering .overlay-slice:nth-child(2) { animation-delay: 0.04s; }
+.page-transition-overlay.entering .overlay-slice:nth-child(3) { animation-delay: 0.08s; }
+.page-transition-overlay.entering .overlay-slice:nth-child(4) { animation-delay: 0.12s; }
+.page-transition-overlay.entering .overlay-slice:nth-child(5) { animation-delay: 0.16s; }
+
+@keyframes sliceReveal {
+  0% { transform: scaleY(1); }
+  100% { transform: scaleY(0); }
+}
+
+/* Exit: slices grow in to cover page */
+.page-transition-overlay.exiting .overlay-slice {
+  transform: scaleY(0);
+  transform-origin: bottom;
+  animation: sliceCover 0.4s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+.page-transition-overlay.exiting .overlay-slice:nth-child(2) { animation-delay: 0.03s; }
+.page-transition-overlay.exiting .overlay-slice:nth-child(3) { animation-delay: 0.06s; }
+.page-transition-overlay.exiting .overlay-slice:nth-child(4) { animation-delay: 0.09s; }
+.page-transition-overlay.exiting .overlay-slice:nth-child(5) { animation-delay: 0.12s; }
+
+@keyframes sliceCover {
+  0% { transform: scaleY(0); }
+  100% { transform: scaleY(1); }
+}
+
+/* ── Page Content Transitions ── */
+.page-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.page-content.hidden-for-transition {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.page-content.animating {
+  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.from-left {
+  transform: translateX(-30px);
+}
+
+.animate-on-scroll.from-right {
+  transform: translateX(30px);
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/* Stagger delay classes */
+.delay-100 {
+  transition-delay: 0.1s;
+}
+
+.delay-200 {
+  transition-delay: 0.2s;
+}
+
+.delay-300 {
+  transition-delay: 0.3s;
+}
+
+.delay-400 {
+  transition-delay: 0.4s;
+}
+
+.delay-500 {
+  transition-delay: 0.5s;
+}
+
+/* Desktop dropdown */
+.dropdown-menu {
+  display: none;
+}
+
+#dropdown-envente.open .dropdown-menu {
+  display: block;
+}
+
+#dropdown-envente.open .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+/* Mobile dropdown */
+.mobile-dropdown-menu {
+  display: none;
+}
+
+.open > .mobile-dropdown-menu {
+  display: flex;
+}
+
+.open > .mobile-dropdown-btn .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+/* Hero animation */
+.hero-animate {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroFadeIn 0.8s ease-out forwards;
+}
+
+@keyframes heroFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile menu */
+#mobile-menu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#mobile-menu.open {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Toast notification */
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  z-index: 100;
+  transform: translateY(120%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.toast.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.toast-title {
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.toast-desc {
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+}

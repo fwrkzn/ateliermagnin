@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <title>Nos Services — Atelier Magnin | Satigny, Genève</title>
+  <meta name="description" content="Carrosserie, restauration complète, mécanique générale, véhicules US modernes et réparation post-accident. Atelier Magnin, Satigny." />
+  <meta property="og:title" content="Services — Atelier Magnin" />
+  <meta property="og:description" content="Découvrez nos prestations : carrosserie, restauration, mécanique de véhicules américains." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- Page Transition Overlay -->
+  <div class="page-transition-overlay">
+    <div class="overlay-slice"></div>
+    <div class="overlay-slice"></div>
+    <div class="overlay-slice"></div>
+    <div class="overlay-slice"></div>
+    <div class="overlay-slice"></div>
+  </div>
+
+  <div class="min-h-screen flex flex-col bg-background">
+
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+      <div class="container flex items-center justify-between h-16">
+        <a href="index.html" class="font-heading text-2xl font-bold tracking-wider">ATELIER <span class="text-primary">MAGNIN</span></a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">Accueil</a>
+          <a href="services.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-primary">Services</a>
+          <a href="a-propos.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">À Propos</a>
+          <div class="relative" id="dropdown-envente">
+            <button onclick="document.getElementById('dropdown-envente').classList.toggle('open')" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground flex items-center gap-1">
+              En vente <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform dropdown-chevron"></i>
+            </button>
+            <div class="dropdown-menu absolute top-full left-0 mt-2 bg-card border border-border rounded-md shadow-lg min-w-[160px] py-1 z-50">
+              <a href="vehicules.html" class="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-secondary transition-colors">Véhicules</a>
+              <a href="pieces.html" class="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-secondary transition-colors">Pièces</a>
+            </div>
+          </div>
+          <a href="contact.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">Contact</a>
+        </nav>
+        <button id="menu-toggle" class="md:hidden text-foreground">
+          <i data-lucide="menu" id="icon-menu" class="w-6 h-6"></i>
+          <i data-lucide="x" id="icon-close" class="w-6 h-6" style="display:none"></i>
+        </button>
+      </div>
+      <nav id="mobile-menu" class="md:hidden border-t border-border bg-background">
+        <div class="container py-4 flex flex-col gap-4">
+          <a href="index.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">Accueil</a>
+          <a href="services.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-primary">Services</a>
+          <a href="a-propos.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">À Propos</a>
+          <div>
+            <button onclick="this.parentElement.classList.toggle('open')" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground flex items-center gap-1 mobile-dropdown-btn">
+              En vente <i data-lucide="chevron-down" class="w-4 h-4 transition-transform dropdown-chevron"></i>
+            </button>
+            <div class="mobile-dropdown-menu pl-4 mt-2 flex flex-col gap-2">
+              <a href="vehicules.html" class="font-heading text-base tracking-widest text-muted-foreground hover:text-primary transition-colors">Véhicules</a>
+              <a href="pieces.html" class="font-heading text-base tracking-widest text-muted-foreground hover:text-primary transition-colors">Pièces</a>
+            </div>
+          </div>
+          <a href="contact.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-1 page-content">
+
+      <!-- Hero banner -->
+      <section class="px-6 py-20 md:px-12 lg:px-24 lg:py-28 !pb-8" style="background: var(--gradient-hero)">
+        <div class="container">
+          <div class="mb-12 text-center animate-on-scroll">
+            <span class="font-heading text-xs tracking-[0.3em] text-primary uppercase mb-2 block">Ce que nous faisons</span>
+            <h2 class="text-3xl md:text-5xl font-bold leading-tight">NOS SERVICES</h2>
+            <p class="mt-4 text-muted-foreground max-w-2xl leading-relaxed mx-auto">
+              Un savoir‑faire artisanal au service de l'automobile américaine. Découvrez nos prestations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service details -->
+      <section class="px-6 py-20 md:px-12 lg:px-24 lg:py-28">
+        <div class="container space-y-20">
+
+          <!-- 1. Carrosserie -->
+          <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div class="overflow-hidden rounded-lg">
+                <img src="assets/services/bodyworks.webp" alt="Carrosserie" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+              </div>
+            </div>
+            <div>
+              <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-4">
+                <i data-lucide="paintbrush" class="w-6 h-6 text-primary"></i>
+              </div>
+              <h3 class="font-heading text-2xl md:text-3xl font-bold mb-4">CARROSSERIE</h3>
+              <p class="text-muted-foreground leading-relaxed">
+                Notre atelier de carrosserie traite tous types de travaux sur véhicules américains : redressage de tôle, soudure, remplacement de panneaux, préparation et application de peinture dans les teintes d'origine. Chaque intervention est réalisée avec un souci du détail qui garantit un résultat impeccable.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Restauration Complète (reversed) -->
+          <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
+            <div class="lg:order-2">
+              <div class="overflow-hidden rounded-lg">
+                <img src="assets/services/restauration.webp" alt="Restauration Complète" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+              </div>
+            </div>
+            <div class="lg:order-1">
+              <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-4">
+                <i data-lucide="wrench" class="w-6 h-6 text-primary"></i>
+              </div>
+              <h3 class="font-heading text-2xl md:text-3xl font-bold mb-4">RESTAURATION COMPLÈTE</h3>
+              <p class="text-muted-foreground leading-relaxed">
+                La restauration intégrale est notre spécialité. Du démontage complet au remontage final, chaque étape est documentée et réalisée dans le respect de l'authenticité : châssis, carrosserie, mécanique, sellerie, câblage et chromes. Nous redonnons vie aux légendes américaines.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Mécanique Générale -->
+          <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div class="overflow-hidden rounded-lg">
+                <img src="assets/services/mechanical.webp" alt="Mécanique Générale" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+              </div>
+            </div>
+            <div>
+              <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-4">
+                <i data-lucide="cog" class="w-6 h-6 text-primary"></i>
+              </div>
+              <h3 class="font-heading text-2xl md:text-3xl font-bold mb-4">MÉCANIQUE GÉNÉRALE</h3>
+              <p class="text-muted-foreground leading-relaxed">
+                Entretien courant, diagnostic avancé, réfection moteur, boîte de vitesses et transmission : nous intervenons sur l'ensemble de la mécanique des véhicules américains, classiques comme modernes. Notre expertise couvre les motorisations V6, V8 et les systèmes de gestion électronique.
+              </p>
+            </div>
+          </div>
+
+          <!-- 4. Véhicules US Modernes (reversed) -->
+          <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
+            <div class="lg:order-2">
+              <div class="overflow-hidden rounded-lg">
+                <img src="assets/services/moderncars.webp" alt="Véhicules US Modernes" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+              </div>
+            </div>
+            <div class="lg:order-1">
+              <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-4">
+                <i data-lucide="truck" class="w-6 h-6 text-primary"></i>
+              </div>
+              <h3 class="font-heading text-2xl md:text-3xl font-bold mb-4">VÉHICULES US MODERNES</h3>
+              <p class="text-muted-foreground leading-relaxed">
+                Pick‑ups, SUV et muscle cars de dernière génération : nous assurons la préparation, l'homologation suisse, l'entretien et les modifications de véhicules américains récents. Adaptation des éclairages, recalibrage des compteurs et mise aux normes européennes.
+              </p>
+            </div>
+          </div>
+
+          <!-- 5. Réparation Post-Accident -->
+          <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
+            <div>
+              <div class="overflow-hidden rounded-lg">
+                <img src="assets/services/postaccident.webp" alt="Réparation Post-Accident" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+              </div>
+            </div>
+            <div>
+              <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-4">
+                <i data-lucide="shield-check" class="w-6 h-6 text-primary"></i>
+              </div>
+              <h3 class="font-heading text-2xl md:text-3xl font-bold mb-4">RÉPARATION POST‑ACCIDENT</h3>
+              <p class="text-muted-foreground leading-relaxed">
+                En cas de sinistre, nous prenons en charge la remise en état complète de votre véhicule américain : expertise, commande de pièces d'origine, carrosserie, peinture et mécanique. Nous travaillons en collaboration avec les assurances pour simplifier vos démarches.
+              </p>
+            </div>
+          </div>
+
+          <!-- 6. Bikes (reversed) -->
+          <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
+            <div class="lg:order-2">
+              <div class="overflow-hidden rounded-lg">
+                <img src="assets/services/bikes.webp" alt="Bikes" class="w-full h-72 lg:h-80 object-cover object-[50%_75%]" loading="lazy" />
+              </div>
+            </div>
+            <div class="lg:order-1">
+              <div class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-4">
+                <i data-lucide="bike" class="w-6 h-6 text-primary"></i>
+              </div>
+              <h3 class="font-heading text-2xl md:text-3xl font-bold mb-4">MOTOS</h3>
+              <p class="text-muted-foreground leading-relaxed">
+                Nous prenons aussi en charge les motos avec la même exigence que pour nos autres prestations : entretien, remise en état, interventions mécaniques et finitions soignées. Chaque projet est traité avec précision pour garantir fiabilité, style et plaisir de conduite.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="px-6 py-20 md:px-12 lg:px-24 lg:py-28 text-center bg-card">
+        <div class="container">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">BESOIN D'UN DEVIS ?</h2>
+          <p class="text-muted-foreground mb-8 max-w-md mx-auto">
+            Décrivez‑nous votre projet et nous vous répondrons dans les meilleurs délais.
+          </p>
+          <a href="contact.html" class="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading text-sm tracking-widest px-7 py-3.5 rounded hover:opacity-90 transition-opacity">
+            DEMANDER UN DEVIS <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary border-t border-border">
+      <div class="container px-6 py-12 md:px-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-lg font-bold mb-3">ATELIER <span class="text-primary">MAGNIN</span></h3>
+            <p class="text-muted-foreground text-sm leading-relaxed">
+              Spécialiste véhicules américains classiques et modernes à Satigny, Genève. Passion, expertise et authenticité depuis des années.
+            </p>
+          </div>
+          <div>
+            <h4 class="font-heading text-sm tracking-widest mb-3 text-foreground">NAVIGATION</h4>
+            <div class="flex flex-col gap-2">
+              <a href="index.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Accueil</a>
+              <a href="services.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Services</a>
+              <a href="a-propos.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">À Propos</a>
+              <a href="vehicules.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Véhicules en vente</a>
+              <a href="pieces.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Pièces en vente</a>
+              <a href="contact.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-heading text-sm tracking-widest mb-3 text-foreground">CONTACT</h4>
+            <div class="text-sm text-muted-foreground space-y-1">
+              <p>Satigny, Genève, Suisse</p>
+              <p><a href="tel:+41786104834" class="hover:text-primary transition-colors">+41 78 610 48 34</a></p>
+              <p>info@atelier-magnin.ch</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-10 pt-6 border-t border-border text-center text-xs text-muted-foreground">
+          &copy; 2026 Atelier Magnin — Tous droits réservés
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/main.js?v=2"></script>
+</body>
+</html>

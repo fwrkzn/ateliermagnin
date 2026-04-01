@@ -1,0 +1,12 @@
+{
+  "name": "atelier-magnin",
+  "version": "1.0.0",
+  "description": "Atelier Magnin website",
+  "scripts": {
+    "build": "tailwindcss -i css/input.css -o css/style.css --minify",
+    "dev": "tailwindcss -i css/input.css -o css/style.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
