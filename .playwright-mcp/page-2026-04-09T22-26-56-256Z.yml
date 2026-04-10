@@ -1,0 +1,110 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "ATELIER MAGNIN" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=e6]:
+        - link "Accueil" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Services" [ref=e8] [cursor=pointer]:
+          - /url: services.html
+        - link "À Propos" [ref=e9] [cursor=pointer]:
+          - /url: a-propos.html
+        - button "Ouvrir le menu En vente" [ref=e11] [cursor=pointer]:
+          - text: En vente
+          - img [ref=e12]
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: contact.html
+  - main [ref=e15]:
+    - link "Retour aux véhicules" [ref=e18] [cursor=pointer]:
+      - /url: vehicules.html
+      - img [ref=e19]
+      - text: Retour aux véhicules
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - img "Ford Sport Ka — Photo principale" [ref=e26]
+          - button [ref=e27] [cursor=pointer]:
+            - img [ref=e28]
+          - button [ref=e30] [cursor=pointer]:
+            - img [ref=e31]
+        - generic [ref=e33]:
+          - button "Miniature 1" [ref=e34] [cursor=pointer]:
+            - img "Miniature 1" [ref=e35]
+          - button "Miniature 2" [ref=e36] [cursor=pointer]:
+            - img "Miniature 2" [ref=e37]
+          - button "Miniature 3" [ref=e38] [cursor=pointer]:
+            - img "Miniature 3" [ref=e39]
+          - button "Miniature 4" [ref=e40] [cursor=pointer]:
+            - img "Miniature 4" [ref=e41]
+          - button "Miniature 5" [ref=e42] [cursor=pointer]:
+            - img "Miniature 5" [ref=e43]
+          - button "Miniature 6" [ref=e44] [cursor=pointer]:
+            - img "Miniature 6" [ref=e45]
+          - button "Miniature 7" [ref=e46] [cursor=pointer]:
+            - img "Miniature 7" [ref=e47]
+          - button "Miniature 8" [ref=e48] [cursor=pointer]:
+            - img "Miniature 8" [ref=e49]
+      - generic [ref=e50]:
+        - generic [ref=e51]: MODERNE
+        - heading "FORD SPORT KA" [level=1] [ref=e52]
+        - paragraph [ref=e53]: CHF 2'900.—
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - paragraph [ref=e56]: ANNÉE
+            - paragraph [ref=e57]: "2006"
+          - generic [ref=e58]:
+            - paragraph [ref=e59]: MOTEUR
+            - paragraph [ref=e60]: I4 1.6 95ch
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: KILOMÉTRAGE
+            - paragraph [ref=e63]: 129'000 km
+          - generic [ref=e64]:
+            - paragraph [ref=e65]: POIDS
+            - paragraph [ref=e66]: 1 050 kg
+        - generic [ref=e67]:
+          - heading "DESCRIPTION" [level=2] [ref=e68]
+          - generic [ref=e69]:
+            - paragraph [ref=e70]: Ford Sport Ka millésime 2006 équipée du bloc I4 1.6 développant 95 chevaux. Compteur affichant 129'000 kilomètres, véhicule expertisé en 2024 et en ordre de marche.
+            - paragraph [ref=e71]: Petite sportive au tempérament de karting — direction précise, châssis joueur et gabarit compact qui en font une voiture idéale pour se faire plaisir au quotidien. Un vrai concentré de fun sur quatre roues.
+        - generic [ref=e72]:
+          - link "NOUS CONTACTER" [ref=e73] [cursor=pointer]:
+            - /url: contact.html
+            - text: NOUS CONTACTER
+            - img [ref=e74]
+          - link "APPELER" [ref=e76] [cursor=pointer]:
+            - /url: tel:+41786104834
+            - img [ref=e77]
+            - text: APPELER
+  - contentinfo [ref=e79]:
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - heading "ATELIER MAGNIN" [level=3] [ref=e83]
+          - paragraph [ref=e84]: Spécialiste véhicules américains classiques et modernes à Satigny, Genève. Passion, expertise et authenticité depuis des années.
+        - generic [ref=e85]:
+          - heading "NAVIGATION" [level=4] [ref=e86]
+          - generic [ref=e87]:
+            - link "Accueil" [ref=e88] [cursor=pointer]:
+              - /url: index.html
+            - link "Services" [ref=e89] [cursor=pointer]:
+              - /url: services.html
+            - link "À Propos" [ref=e90] [cursor=pointer]:
+              - /url: a-propos.html
+            - link "Véhicules en vente" [ref=e91] [cursor=pointer]:
+              - /url: vehicules.html
+            - link "Pièces en vente" [ref=e92] [cursor=pointer]:
+              - /url: pieces.html
+            - link "Contact" [ref=e93] [cursor=pointer]:
+              - /url: contact.html
+        - generic [ref=e94]:
+          - heading "CONTACT" [level=4] [ref=e95]
+          - generic [ref=e96]:
+            - paragraph [ref=e97]: Satigny, Genève, Suisse
+            - paragraph [ref=e98]:
+              - link "+41 78 610 48 34" [ref=e99] [cursor=pointer]:
+                - /url: tel:+41786104834
+            - paragraph [ref=e100]:
+              - link "jeremy@ateliermagnincustom.com" [ref=e101] [cursor=pointer]:
+                - /url: mailto:jeremy@ateliermagnincustom.com
+      - generic [ref=e102]: © 2026 Atelier Magnin — Tous droits réservés

@@ -6,13 +6,42 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <title>Contact — Atelier Magnin | Satigny, Genève</title>
   <meta name="description" content="Contactez l'Atelier Magnin pour votre projet de restauration, carrosserie ou mécanique de véhicules américains à Satigny, Genève." />
+  <link rel="canonical" href="https://ateliermagnincustom.com/contact.html" />
   <meta property="og:title" content="Contact — Atelier Magnin" />
   <meta property="og:description" content="Envoyez-nous un message ou passez directement à l'atelier à Satigny, Genève." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ateliermagnincustom.com/contact.html" />
+  <meta property="og:image" content="https://ateliermagnincustom.com/assets/hero-mustang.webp" />
+  <meta property="og:locale" content="fr_CH" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Atelier Magnin" />
+  <meta name="twitter:description" content="Envoyez-nous un message ou passez directement à l'atelier à Satigny, Genève." />
+  <meta name="twitter:image" content="https://ateliermagnincustom.com/assets/hero-mustang.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
   <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Contact — Atelier Magnin",
+      "url": "https://ateliermagnincustom.com/contact.html",
+      "mainEntity": {
+        "@type": "AutoRepair",
+        "name": "Atelier Magnin Custom Sàrl",
+        "telephone": "+41786104834",
+        "email": "jeremy@ateliermagnincustom.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Satigny",
+          "postalCode": "1242",
+          "addressRegion": "Genève",
+          "addressCountry": "CH"
+        }
+      }
+    }
+  </script>
 </head>
 <body>
   <!-- Page Transition Overlay -->
@@ -73,7 +102,7 @@
     <main class="flex-1 page-content">
 
       <!-- Hero banner -->
-      <section class="px-6 py-20 md:px-12 lg:px-24 lg:py-28 !pb-8" style="background: var(--gradient-hero)">
+      <section class="px-4 py-20 md:px-12 lg:px-24 lg:py-28 !pb-8" style="background: var(--gradient-hero)">
         <div class="container">
           <div class="mb-12 text-center animate-on-scroll">
             <span class="font-heading text-xs tracking-[0.3em] text-primary uppercase mb-2 block">Parlons de votre projet</span>
@@ -86,7 +115,7 @@
       </section>
 
       <!-- Contact section -->
-      <section class="px-6 py-20 md:px-12 lg:px-24 lg:py-28">
+      <section class="px-4 py-20 md:px-12 lg:px-24 lg:py-28">
         <div class="container grid lg:grid-cols-5 gap-12">
 
           <!-- Info -->
@@ -117,7 +146,7 @@
               </div>
               <div>
                 <p class="font-heading text-sm tracking-widest text-foreground">EMAIL</p>
-                <p class="text-muted-foreground text-sm mt-0.5">jeremy@ateliermagnincustom.com</p>
+                <p class="text-muted-foreground text-sm mt-0.5"><a href="mailto:jeremy@ateliermagnincustom.com" class="hover:text-primary transition-colors">jeremy@ateliermagnincustom.com</a></p>
               </div>
             </div>
             <div class="animate-on-scroll from-left delay-300 flex items-start gap-4">
@@ -129,34 +158,46 @@
                 <p class="text-muted-foreground text-sm mt-0.5">Lun–Ven : 7h30–17h30</p>
               </div>
             </div>
+            <div class="animate-on-scroll from-left delay-400 rounded-lg border border-border bg-card p-6">
+              <p class="font-heading text-sm tracking-widest text-foreground mb-3">SUR PLACE</p>
+              <p class="text-muted-foreground text-sm leading-relaxed mb-3">
+                Atelier Magnin Custom Sàrl travaille dans les mêmes locaux que la Carrosserie de Satigny SA, ce qui nous permet de coordonner plus facilement les travaux de mécanique, tôlerie, carrosserie et peinture.
+              </p>
+              <p class="text-muted-foreground text-sm leading-relaxed">
+                Idéal pour les restaurations complètes, les réparations après accident et les projets nécessitant plusieurs corps de métier.
+              </p>
+            </div>
           </div>
 
           <!-- Form -->
           <form id="contact-form" name="contact" class="animate-on-scroll lg:col-span-3 bg-card border border-border rounded-lg p-8 space-y-5" netlify>
             <input type="hidden" name="form-name" value="contact" />
+            <p class="text-sm text-muted-foreground leading-relaxed">
+              Décrivez votre véhicule, le type d'intervention souhaité et, si besoin, l'urgence du dossier. Nous revenons vers vous dans les meilleurs délais.
+            </p>
             <div class="grid sm:grid-cols-2 gap-5">
               <div>
-                <label class="text-sm text-muted-foreground block mb-1.5">Nom *</label>
-                <input name="nom" required class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
+                <label for="nom" class="text-sm text-muted-foreground block mb-1.5">Nom *</label>
+                <input id="nom" name="nom" required class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
               </div>
               <div>
-                <label class="text-sm text-muted-foreground block mb-1.5">Email *</label>
-                <input name="email" type="email" required class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
+                <label for="email" class="text-sm text-muted-foreground block mb-1.5">Email *</label>
+                <input id="email" name="email" type="email" required class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
               </div>
             </div>
             <div class="grid sm:grid-cols-2 gap-5">
               <div>
-                <label class="text-sm text-muted-foreground block mb-1.5">Téléphone</label>
-                <input name="telephone" class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
+                <label for="telephone" class="text-sm text-muted-foreground block mb-1.5">Téléphone</label>
+                <input id="telephone" name="telephone" class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
               </div>
               <div>
-                <label class="text-sm text-muted-foreground block mb-1.5">Sujet *</label>
-                <input name="sujet" required class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
+                <label for="sujet" class="text-sm text-muted-foreground block mb-1.5">Sujet *</label>
+                <input id="sujet" name="sujet" required class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary" />
               </div>
             </div>
             <div>
-              <label class="text-sm text-muted-foreground block mb-1.5">Message *</label>
-              <textarea name="message" required rows="5" class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary resize-none"></textarea>
+              <label for="message" class="text-sm text-muted-foreground block mb-1.5">Message *</label>
+              <textarea id="message" name="message" required rows="5" class="w-full bg-secondary border border-border rounded px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-primary resize-none"></textarea>
             </div>
             <button type="submit" class="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading text-sm tracking-widest px-7 py-3 rounded hover:opacity-90 transition-opacity">
               ENVOYER <i data-lucide="send" class="w-4 h-4"></i>
@@ -166,11 +207,33 @@
         </div>
       </section>
 
-      <!-- Map placeholder -->
-      <section class="h-80 bg-secondary flex items-center justify-center">
-        <div class="text-center text-muted-foreground">
-          <i data-lucide="map-pin" class="w-8 h-8 mx-auto mb-2 text-primary"></i>
-          <p class="font-heading text-sm tracking-widest">SATIGNY, GENÈVE</p>
+      <!-- Contact CTA -->
+      <section class="px-4 py-20 md:px-12 lg:px-24 lg:py-28 bg-secondary">
+        <div class="container grid lg:grid-cols-2 gap-8 items-center">
+          <div class="animate-on-scroll">
+            <span class="font-heading text-xs tracking-[0.3em] text-primary uppercase mb-2 block">Nous trouver</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">ATELIER À SATIGNY</h2>
+            <p class="text-muted-foreground leading-relaxed mb-4">
+              L'atelier est situé à Satigny, dans le canton de Genève, avec un accès simple pour les clients de Suisse romande et de la région frontalière.
+            </p>
+            <p class="text-muted-foreground leading-relaxed mb-6">
+              Pour organiser une visite, un diagnostic ou le dépôt d'un véhicule, le plus simple reste de nous appeler ou de nous écrire avant votre passage.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="https://maps.app.goo.gl/5HWVJfMsbd1MPGki8" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading text-sm tracking-widest px-7 py-3.5 rounded hover:opacity-90 transition-opacity">
+                ITINÉRAIRE <i data-lucide="map-pin" class="w-4 h-4"></i>
+              </a>
+              <a href="tel:+41786104834" class="inline-flex items-center gap-2 border border-foreground/20 text-foreground font-heading text-sm tracking-widest px-7 py-3.5 rounded hover:border-primary hover:text-primary transition-colors">
+                APPELER <i data-lucide="phone" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div class="animate-on-scroll delay-100 rounded-lg border border-border bg-card p-8 text-center text-muted-foreground">
+            <i data-lucide="map-pin" class="w-8 h-8 mx-auto mb-3 text-primary"></i>
+            <p class="font-heading text-sm tracking-widest mb-2">SATIGNY, 1242 GENÈVE</p>
+            <p class="text-sm leading-relaxed">Atelier Magnin Custom Sàrl</p>
+            <p class="text-sm leading-relaxed">Dans les mêmes locaux que la Carrosserie de Satigny SA</p>
+          </div>
         </div>
       </section>
 
@@ -178,7 +241,7 @@
 
     <!-- Footer -->
     <footer class="bg-secondary border-t border-border">
-      <div class="container px-6 py-12 md:px-12">
+      <div class="container px-4 py-12 md:px-12">
         <div class="grid md:grid-cols-3 gap-8">
           <div>
             <h3 class="text-lg font-bold mb-3">ATELIER <span class="text-primary">MAGNIN</span></h3>
@@ -202,7 +265,7 @@
             <div class="text-sm text-muted-foreground space-y-1">
               <p>Satigny, Genève, Suisse</p>
               <p><a href="tel:+41786104834" class="hover:text-primary transition-colors">+41 78 610 48 34</a></p>
-              <p>jeremy@ateliermagnincustom.com</p>
+              <p><a href="mailto:jeremy@ateliermagnincustom.com" class="hover:text-primary transition-colors">jeremy@ateliermagnincustom.com</a></p>
             </div>
           </div>
         </div>

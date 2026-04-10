@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ateliermagnincustom.com/sitemap.xml

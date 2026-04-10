@@ -198,6 +198,11 @@ p {
   display: flex;
 }
 
+.mobile-dropdown-btn {
+  width: 100%;
+  justify-content: space-between;
+}
+
 .open > .mobile-dropdown-btn .dropdown-chevron {
   transform: rotate(180deg);
 }

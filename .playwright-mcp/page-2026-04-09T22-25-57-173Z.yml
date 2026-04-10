@@ -1,0 +1,522 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "zerosix" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+    - generic [ref=e4]:
+      - link "Accueil" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+      - link "Portfolio" [ref=e6] [cursor=pointer]:
+        - /url: portfolio.html
+      - link "À propos" [ref=e7] [cursor=pointer]:
+        - /url: about.html
+      - link "Blog" [ref=e8] [cursor=pointer]:
+        - /url: blog.html
+      - link "Contact" [ref=e9] [cursor=pointer]:
+        - /url: contact.html
+      - link "LinkedIn" [ref=e10] [cursor=pointer]:
+        - /url: https://linkedin.com
+        - img
+  - generic [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e15]: Conversion
+      - generic [ref=e16]: +35%
+    - generic [ref=e17]:
+      - generic [ref=e19]: Lancement
+      - generic [ref=e20]: 12 sem.
+    - generic [ref=e21]:
+      - generic [ref=e23]: Satisfaction
+      - generic [ref=e24]: 98%
+    - generic [ref=e25]:
+      - generic [ref=e27]: Projets livrés
+      - generic [ref=e28]: 120+
+    - generic [ref=e29]:
+      - generic [ref=e30]: 🍃
+      - generic [ref=e31]: Adopté par plus de 500 marques
+      - generic [ref=e32]: 🍃
+    - heading "Le design qui guide les décisions." [level=1] [ref=e33]:
+      - text: Le design qui guide
+      - text: les
+      - emphasis [ref=e34]: décisions.
+    - paragraph [ref=e35]: Aider les marques à croître, convertir et se démarquer grâce à des expériences numériques de premier plan.
+    - generic [ref=e36]:
+      - link "Contactez-nous" [ref=e37] [cursor=pointer]:
+        - /url: "#contact"
+      - link "Voir le portfolio →" [ref=e38] [cursor=pointer]:
+        - /url: "#portfolio"
+        - text: Voir le portfolio
+        - generic [ref=e39]: →
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - text: "120"
+          - emphasis [ref=e43]: +
+        - generic [ref=e44]: Projets livrés
+      - generic [ref=e46]:
+        - generic [ref=e47]:
+          - text: "35"
+          - emphasis [ref=e48]: "%"
+        - generic [ref=e49]: Conv. moy.
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - text: "8"
+          - emphasis [ref=e53]: ans
+        - generic [ref=e54]: D'expertise
+    - generic [ref=e56]: Scroll
+  - generic [ref=e58]:
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - generic [ref=e64]: wildcrafted.com
+        - generic [ref=e65]:
+          - generic [ref=e66]: Services
+          - generic [ref=e67]: Projets
+          - generic [ref=e68]: Contact
+          - generic [ref=e69]: Commencer
+      - generic [ref=e70]:
+        - generic [ref=e71]: Branding pour entreprises modernes
+        - heading "Créer des marques avec du caractère." [level=3] [ref=e72]:
+          - text: Créer des marques
+          - text: avec du caractère.
+        - paragraph [ref=e73]: Inspirées par la nature et affinées par le design, des identités intentionnelles, ancrées et incontestablement uniques.
+        - generic [ref=e74]: Commencer
+      - generic [ref=e75]:
+        - generic [ref=e76]: Défiler vers le bas
+        - generic [ref=e77]: pour voir les projets
+    - generic [ref=e78]:
+      - generic [ref=e79]: Travaux sélectionnés
+      - generic [ref=e80]:
+        - generic [ref=e81] [cursor=pointer]: Clande
+        - generic [ref=e83] [cursor=pointer]: Vision
+        - generic [ref=e85] [cursor=pointer]: Wild
+        - generic [ref=e87] [cursor=pointer]: PictelAI
+        - generic [ref=e89] [cursor=pointer]: "+1"
+  - generic [ref=e91]:
+    - heading "Savez-vous ce qu'un design inefficace vous coûte vraiment ?" [level=2] [ref=e92]:
+      - text: Savez-vous ce qu'un design
+      - emphasis [ref=e93]: inefficace
+      - text: vous coûte vraiment ?
+    - generic:
+      - generic:
+        - generic: 👁
+        - text: L'attention perdue aux moments critiques.
+      - generic:
+        - generic: 💜
+        - text: Des occasions manquées de bâtir la confiance.
+      - generic:
+        - generic: 👥
+        - text: Des clients potentiels qui se désengagent.
+      - generic:
+        - generic: 🚀
+        - text: Une croissance qui n'atteint jamais son potentiel.
+  - generic [ref=e94]:
+    - generic [ref=e95]:
+      - generic [ref=e96]: Services
+      - heading "Ce que nous offrons." [level=2] [ref=e97]:
+        - text: Ce que nous
+        - emphasis [ref=e98]: offrons.
+      - paragraph [ref=e99]: Nos services essentiels pour un design numérique performant.
+    - generic [ref=e100]:
+      - article [ref=e101]:
+        - img [ref=e103]
+        - heading "Stratégie de marque & identité" [level=5] [ref=e108]
+        - paragraph [ref=e109]: Positionnement, stratégie de marque et systèmes d'identité qui créent clarté et direction.
+      - article [ref=e110]:
+        - img [ref=e112]
+        - heading "Web design & UI" [level=5] [ref=e117]
+        - paragraph [ref=e118]: Des interfaces numériques épurées et percutantes, conçues autour des besoins utilisateurs et des valeurs de marque.
+      - article [ref=e119]:
+        - img [ref=e121]
+        - heading "UX & design de conversion" [level=5] [ref=e124]
+        - paragraph [ref=e125]: Des expériences et interactions utilisateur conçues pour capter l'attention et la convertir en action.
+      - article [ref=e126]:
+        - img [ref=e128]
+        - heading "Produit numérique & croissance" [level=5] [ref=e131]
+        - paragraph [ref=e132]: Amélioration continue du produit, tests A/B et croissance axée sur l'expérience.
+  - generic [ref=e133]:
+    - heading "Choisi par les leaders du secteur." [level=2] [ref=e134]:
+      - text: Choisi par les
+      - emphasis [ref=e135]: leaders
+      - text: du secteur.
+    - generic [ref=e137]:
+      - img [ref=e139]
+      - img [ref=e143]
+      - img [ref=e147]
+      - img [ref=e150]
+      - img [ref=e154]
+      - img [ref=e157]
+      - img [ref=e160]
+      - img [ref=e164]
+      - img [ref=e167]
+      - img [ref=e170]
+      - img [ref=e174]
+      - img [ref=e177]
+      - img [ref=e182]
+      - img [ref=e186]
+      - img [ref=e190]
+      - img [ref=e193]
+      - img [ref=e197]
+      - img [ref=e200]
+      - img [ref=e203]
+      - img [ref=e207]
+      - img [ref=e210]
+      - img [ref=e213]
+      - img [ref=e217]
+      - img [ref=e220]
+  - generic [ref=e224]:
+    - generic [ref=e225]:
+      - generic [ref=e226]: Portfolio
+      - heading "Des projets qui performent." [level=2] [ref=e227]:
+        - text: Des projets qui
+        - emphasis [ref=e228]: performent.
+    - generic [ref=e229]:
+      - link "Voir ce que les autres ne voient pas. Plateforme de cybersécurité nouvelle génération Site produit B2B +28% demandes de démo" [ref=e230] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e236]:
+          - heading "Voir ce que les autres ne voient pas." [level=4] [ref=e237]:
+            - text: Voir ce que
+            - text: les autres ne voient pas.
+          - paragraph [ref=e238]: Plateforme de cybersécurité nouvelle génération
+        - generic [ref=e239]:
+          - generic [ref=e240]: Site produit B2B
+          - generic [ref=e241]: +28% demandes de démo
+      - link "Narration visuelle. Raffinée. Portfolio d'agence créative Site d'agence +35% prospects" [ref=e242] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e248]:
+          - heading "Narration visuelle. Raffinée." [level=4] [ref=e249]:
+            - text: Narration visuelle.
+            - text: Raffinée.
+          - paragraph [ref=e250]: Portfolio d'agence créative
+        - generic [ref=e251]:
+          - generic [ref=e252]: Site d'agence
+          - generic [ref=e253]: +35% prospects
+      - link "Concevoir le futur de la médecine. Refonte de plateforme santé Refonte de site +18% engagement" [ref=e254] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e260]:
+          - heading "Concevoir le futur de la médecine." [level=4] [ref=e261]:
+            - text: Concevoir le
+            - text: futur de la médecine.
+          - paragraph [ref=e262]: Refonte de plateforme santé
+        - generic [ref=e263]:
+          - generic [ref=e264]: Refonte de site
+          - generic [ref=e265]: +18% engagement
+      - link "Créer des marques avec du caractère. Identité de marque & web design Site d'agence +33% trafic" [ref=e266] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e272]:
+          - heading "Créer des marques avec du caractère." [level=4] [ref=e273]:
+            - text: Créer des marques
+            - text: avec du caractère.
+          - paragraph [ref=e274]: Identité de marque & web design
+        - generic [ref=e275]:
+          - generic [ref=e276]: Site d'agence
+          - generic [ref=e277]: +33% trafic
+      - link "Systèmes IA avancés conçus pour évoluer. Page d'atterrissage produit IA Page d'atterrissage +40% inscriptions" [ref=e278] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e284]:
+          - heading "Systèmes IA avancés conçus pour évoluer." [level=4] [ref=e285]:
+            - text: Systèmes IA avancés
+            - text: conçus pour évoluer.
+          - paragraph [ref=e286]: Page d'atterrissage produit IA
+        - generic [ref=e287]:
+          - generic [ref=e288]: Page d'atterrissage
+          - generic [ref=e289]: +40% inscriptions
+      - link "Analyses vidéo en temps réel pour l'entreprise. Tableau de bord analytique SaaS Site SaaS +10% revenus" [ref=e290] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e296]:
+          - heading "Analyses vidéo en temps réel pour l'entreprise." [level=4] [ref=e297]:
+            - text: Analyses vidéo en temps réel
+            - text: pour l'entreprise.
+          - paragraph [ref=e298]: Tableau de bord analytique SaaS
+        - generic [ref=e299]:
+          - generic [ref=e300]: Site SaaS
+          - generic [ref=e301]: +10% revenus
+  - generic [ref=e302]:
+    - generic [ref=e303]:
+      - generic [ref=e304]: Témoignages
+      - heading "Mesuré par l'impact." [level=2] [ref=e305]:
+        - text: Mesuré par
+        - emphasis [ref=e306]: l'impact.
+    - generic [ref=e307]:
+      - generic [ref=e308]:
+        - generic [ref=e309]: 🍃
+        - generic [ref=e310]: Adopté par plus de 500 marques
+        - generic [ref=e311]: 🍃
+      - generic [ref=e312]:
+        - generic [ref=e313]:
+          - heading "« Les prospects ont augmenté de 35 % dès le premier mois. »" [level=5] [ref=e314]
+          - generic [ref=e315]:
+            - heading "Maya Rinaldi" [level=6] [ref=e316]
+            - paragraph [ref=e317]: PDG de Visionwork, Inc.
+        - generic:
+          - heading "« Les demandes de démo ont augmenté de 28 % après le lancement. »" [level=5]
+          - generic:
+            - heading "Dr. Lena Vogel" [level=6]
+            - paragraph: Responsable produit chez Clandestine, Inc.
+        - generic:
+          - heading "« La nouvelle page d'atterrissage a augmenté les inscriptions de 40 %. »" [level=5]
+          - generic:
+            - heading "Jonas K. Meyer" [level=6]
+            - paragraph: Responsable croissance chez Pictel AI
+      - generic [ref=e318]:
+        - button "Témoignage précédent" [ref=e319] [cursor=pointer]: ←
+        - button "Témoignage suivant" [ref=e320] [cursor=pointer]: →
+  - generic [ref=e321]:
+    - generic [ref=e322]:
+      - generic [ref=e323]: Tarifs
+      - heading "La clarté des tarifs." [level=2] [ref=e324]:
+        - text: La clarté des
+        - emphasis [ref=e325]: tarifs.
+      - paragraph [ref=e326]: Des tarifs transparents, adaptés à l'envergure du projet.
+    - generic [ref=e327]:
+      - generic [ref=e328]:
+        - img [ref=e330]
+        - heading "Standard" [level=4] [ref=e334]
+        - paragraph [ref=e335]: Pour les marques émergentes et les lancements rapides
+        - generic [ref=e336]:
+          - heading "6 500 €" [level=5] [ref=e337]
+          - generic [ref=e338]: / projet
+        - link "Réserver une consultation" [ref=e339] [cursor=pointer]:
+          - /url: "#contact"
+        - list [ref=e340]:
+          - listitem [ref=e341]:
+            - generic [ref=e342]: ✓
+            - text: Identité de marque
+          - listitem [ref=e343]:
+            - generic [ref=e344]: ✓
+            - text: Web design percutant
+          - listitem [ref=e345]:
+            - generic [ref=e346]: ✓
+            - text: UX axé conversion
+          - listitem [ref=e347]:
+            - generic [ref=e348]: ✓
+            - text: Systèmes UI responsive
+          - listitem [ref=e349]:
+            - generic [ref=e350]: ✓
+            - text: Bibliothèque de composants
+          - listitem [ref=e351]:
+            - generic [ref=e352]: ✓
+            - text: Documentation
+      - generic [ref=e353]:
+        - img [ref=e355]
+        - heading "Premium" [level=4] [ref=e357]
+        - paragraph [ref=e358]: Pour les entreprises en forte croissance
+        - generic [ref=e359]:
+          - heading "9 500 €" [level=5] [ref=e360]
+          - generic [ref=e361]: / projet
+        - link "Réserver une consultation" [ref=e362] [cursor=pointer]:
+          - /url: "#contact"
+        - list [ref=e363]:
+          - listitem [ref=e364]:
+            - generic [ref=e365]: ✓
+            - text: Identité de marque
+          - listitem [ref=e366]:
+            - generic [ref=e367]: ✓
+            - text: Web design percutant
+          - listitem [ref=e368]:
+            - generic [ref=e369]: ✓
+            - text: UX axé conversion
+          - listitem [ref=e370]:
+            - generic [ref=e371]: ✓
+            - text: Systèmes UI responsive
+          - listitem [ref=e372]:
+            - generic [ref=e373]: ✓
+            - text: Bibliothèque de composants
+          - listitem [ref=e374]:
+            - generic [ref=e375]: ✓
+            - text: Documentation
+    - generic [ref=e376]:
+      - generic [ref=e377]:
+        - img [ref=e379]
+        - heading "Transparent" [level=5] [ref=e382]
+        - paragraph [ref=e383]: Périmètre clair. Aucune surprise cachée.
+      - generic [ref=e384]:
+        - img [ref=e386]
+        - heading "Structuré" [level=5] [ref=e389]
+        - paragraph [ref=e390]: Des phases définies. Des résultats prévisibles.
+      - generic [ref=e391]:
+        - img [ref=e393]
+        - heading "Évolutif" [level=5] [ref=e395]
+        - paragraph [ref=e396]: Conçu pour grandir avec votre entreprise.
+  - generic [ref=e397]:
+    - generic [ref=e398]:
+      - generic [ref=e399]: Comparaison
+      - heading "Ce qui nous distingue." [level=2] [ref=e400]:
+        - text: Ce qui nous
+        - emphasis [ref=e401]: distingue.
+    - generic [ref=e402]:
+      - generic [ref=e403]:
+        - heading "Autres agences" [level=4] [ref=e404]
+        - list [ref=e405]:
+          - listitem [ref=e406]:
+            - generic [ref=e407]: ⚠
+            - text: Exécutent ce que vous demandez
+          - listitem [ref=e408]:
+            - generic [ref=e409]: ⚠
+            - text: Focus sur les livrables
+          - listitem [ref=e410]:
+            - generic [ref=e411]: ⚠
+            - text: Processus figés
+          - listitem [ref=e412]:
+            - generic [ref=e413]: ⚠
+            - text: Choix de design prudents
+          - listitem [ref=e414]:
+            - generic [ref=e415]: ⚠
+            - text: Livraison et au revoir
+      - generic [ref=e416]:
+        - heading "zerosix" [level=4] [ref=e417]
+        - list [ref=e418]:
+          - listitem [ref=e419]:
+            - generic [ref=e420]: ✓
+            - text: Repenser vos besoins
+          - listitem [ref=e421]:
+            - generic [ref=e422]: ✓
+            - text: Focus sur l'impact business
+          - listitem [ref=e423]:
+            - generic [ref=e424]: ✓
+            - text: Systèmes adaptatifs
+          - listitem [ref=e425]:
+            - generic [ref=e426]: ✓
+            - text: Design audacieux et stratégique
+          - listitem [ref=e427]:
+            - generic [ref=e428]: ✓
+            - text: Partenaire à long terme
+  - generic [ref=e429]:
+    - generic [ref=e430]:
+      - generic [ref=e431]: Blog
+      - heading "Depuis le studio." [level=2] [ref=e432]:
+        - text: Depuis le
+        - emphasis [ref=e433]: studio.
+      - paragraph [ref=e434]: Articles sur la stratégie, l'UX et la réflexion derrière un design performant.
+    - generic [ref=e435]:
+      - link "Blog Les systèmes de design permettent l'échelle 9 mars 2026" [ref=e436] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e438]:
+          - generic [ref=e439]: Blog
+          - heading "Les systèmes de design permettent l'échelle" [level=4] [ref=e440]
+          - generic [ref=e441]: 9 mars 2026
+      - link "Blog Le coût caché d'une UX confuse 28 janv. 2026" [ref=e442] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e444]:
+          - generic [ref=e445]: Blog
+          - heading "Le coût caché d'une UX confuse" [level=4] [ref=e446]
+          - generic [ref=e447]: 28 janv. 2026
+      - link "Blog L'apparence ne génère pas de résultats 11 janv. 2026" [ref=e448] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e450]:
+          - generic [ref=e451]: Blog
+          - heading "L'apparence ne génère pas de résultats" [level=4] [ref=e452]
+          - generic [ref=e453]: 11 janv. 2026
+    - link "Voir tous les articles" [ref=e455] [cursor=pointer]:
+      - /url: "#"
+  - generic [ref=e456]:
+    - generic [ref=e457]:
+      - generic [ref=e458]: FAQ
+      - heading "Questions fréquentes." [level=2] [ref=e459]:
+        - text: Questions
+        - emphasis [ref=e460]: fréquentes.
+    - generic [ref=e461]:
+      - article [ref=e462] [cursor=pointer]:
+        - generic [ref=e463]:
+          - generic [ref=e464]: Quelle est la spécialité de zerosix ?
+          - generic [ref=e465]: +
+        - paragraph [ref=e466]: Nous sommes spécialisés dans le web design percutant, l'identité de marque, la stratégie UX et l'optimisation de conversion pour les entreprises en croissance.
+      - article [ref=e467] [cursor=pointer]:
+        - generic [ref=e468]:
+          - generic [ref=e469]: Avec qui travaillez-vous généralement ?
+          - generic [ref=e470]: +
+        - paragraph [ref=e471]: Nous collaborons avec des startups, des scale-ups et des marques établies cherchant à élever leur présence numérique et à obtenir des résultats mesurables.
+      - article [ref=e472] [cursor=pointer]:
+        - generic [ref=e473]:
+          - generic [ref=e474]: Comment démarrent les projets ?
+          - generic [ref=e475]: +
+        - paragraph [ref=e476]: Chaque projet commence par une session de découverte où nous alignons les objectifs, le périmètre, le calendrier et les livrables avant tout travail de design.
+      - article [ref=e477] [cursor=pointer]:
+        - generic [ref=e478]:
+          - generic [ref=e479]: Un support est-il disponible après le lancement ?
+          - generic [ref=e480]: +
+        - paragraph [ref=e481]: Absolument. Nous offrons un support post-lancement et une optimisation continue pour garantir des performances durables et une amélioration constante.
+      - article [ref=e482] [cursor=pointer]:
+        - generic [ref=e483]:
+          - generic [ref=e484]: Comment zerosix garantit-il la qualité ?
+          - generic [ref=e485]: +
+        - paragraph [ref=e486]: Grâce à des phases de design structurées, des processus de révision rigoureux et un engagement à livrer un travail qui performe, pas seulement qui est beau.
+      - article [ref=e487] [cursor=pointer]:
+        - generic [ref=e488]:
+          - generic [ref=e489]: À quelle vitesse un projet peut-il démarrer ?
+          - generic [ref=e490]: +
+        - paragraph [ref=e491]: Selon la disponibilité, la plupart des projets démarrent dans les 1 à 2 semaines suivant la signature. Nous confirmerons le calendrier exact lors de notre consultation initiale.
+  - generic [ref=e493]:
+    - generic [ref=e494]:
+      - generic [ref=e495]: Parlons-en
+      - heading "Prêt pour un design à vrai impact ?" [level=2] [ref=e496]:
+        - text: Prêt pour un design
+        - text: à vrai
+        - emphasis [ref=e497]: impact
+        - text: "?"
+      - paragraph [ref=e498]: Partagez quelques détails et nous vous recontacterons rapidement.
+    - generic [ref=e499]:
+      - generic [ref=e500]:
+        - generic [ref=e501]: Nom*
+        - textbox "Julian Crestwood" [ref=e502]
+      - generic [ref=e503]:
+        - generic [ref=e504]: Email*
+        - textbox "julian@example.com" [ref=e505]
+      - generic [ref=e506]:
+        - generic [ref=e507]: Type de projet
+        - combobox [ref=e508] [cursor=pointer]:
+          - option "Sélectionner..." [disabled] [selected]
+          - option "Site web / Refonte"
+          - option "Marque & Identité"
+          - option "UX & Conversion"
+          - option "Design continu"
+          - option "Autre"
+      - button "Envoyer votre demande" [ref=e509] [cursor=pointer]
+  - contentinfo [ref=e510]:
+    - generic [ref=e511]:
+      - generic [ref=e512]:
+        - generic [ref=e513]: zerosix
+        - generic [ref=e514]: Conçu pour performer.
+        - generic [ref=e515]:
+          - link "LinkedIn" [ref=e516] [cursor=pointer]:
+            - /url: https://linkedin.com
+            - img [ref=e517]
+          - link "Instagram" [ref=e519] [cursor=pointer]:
+            - /url: https://instagram.com
+            - img [ref=e520]
+          - link "X" [ref=e522] [cursor=pointer]:
+            - /url: https://x.com
+            - img [ref=e523]
+      - generic [ref=e525]:
+        - generic [ref=e526]:
+          - heading "Principal" [level=6] [ref=e527]
+          - link "Accueil" [ref=e528] [cursor=pointer]:
+            - /url: index.html
+          - link "À propos" [ref=e529] [cursor=pointer]:
+            - /url: about.html
+          - link "Contact" [ref=e530] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=e531]:
+          - heading "Pages" [level=6] [ref=e532]
+          - link "Portfolio" [ref=e533] [cursor=pointer]:
+            - /url: portfolio.html
+          - link "Blog" [ref=e534] [cursor=pointer]:
+            - /url: blog.html
+          - link "Contact" [ref=e535] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=e536]:
+          - heading "Réseaux" [level=6] [ref=e537]
+          - link "LinkedIn" [ref=e538] [cursor=pointer]:
+            - /url: https://linkedin.com
+          - link "Instagram" [ref=e539] [cursor=pointer]:
+            - /url: https://instagram.com
+          - link "X (Twitter)" [ref=e540] [cursor=pointer]:
+            - /url: https://x.com
+        - generic [ref=e541]:
+          - heading "Légal" [level=6] [ref=e542]
+          - link "Politique de confidentialité" [ref=e543] [cursor=pointer]:
+            - /url: "#"
+          - link "Conditions d'utilisation" [ref=e544] [cursor=pointer]:
+            - /url: "#"
+          - link "Politique de cookies" [ref=e545] [cursor=pointer]:
+            - /url: "#"
+    - generic [ref=e546]:
+      - generic [ref=e547]: © 2026 zerosix, Inc. Tous droits réservés.
+      - generic [ref=e548]: Conçu en Suisse. Créé pour le monde.

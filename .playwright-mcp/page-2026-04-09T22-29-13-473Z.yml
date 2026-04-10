@@ -1,0 +1,152 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "ATELIER MAGNIN" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+      - navigation [ref=e6]:
+        - link "Accueil" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+        - link "Services" [ref=e8] [cursor=pointer]:
+          - /url: services.html
+        - link "À Propos" [ref=e9] [cursor=pointer]:
+          - /url: a-propos.html
+        - button "Ouvrir le menu En vente" [ref=e11] [cursor=pointer]:
+          - text: En vente
+          - img [ref=e12]
+        - link "Contact" [ref=e14] [cursor=pointer]:
+          - /url: contact.html
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - img "Ford Mustang classique dans l'atelier" [ref=e18]
+      - generic [ref=e22]:
+        - generic [ref=e23]: Satigny, Genève — Suisse
+        - heading "L'EXCELLENCE AMÉRICAINE EN SUISSE" [level=1] [ref=e24]:
+          - text: L'EXCELLENCE
+          - text: AMÉRICAINE
+          - text: EN SUISSE
+        - paragraph [ref=e25]: "Atelier Magnin : spécialiste passionné des véhicules américains classiques et modernes. Carrosserie, restauration, mécanique — un savoir‑faire artisanal au service de votre passion."
+        - paragraph [ref=e26]: Dans les mêmes locaux que la Carrosserie de Satigny SA, nous réunissons carrosserie, peinture et mécanique sur un même site pour assurer une prise en charge complète.
+        - generic [ref=e27]:
+          - link "NOS SERVICES" [ref=e28] [cursor=pointer]:
+            - /url: services.html
+            - text: NOS SERVICES
+            - img [ref=e29]
+          - link "NOUS CONTACTER" [ref=e31] [cursor=pointer]:
+            - /url: contact.html
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]: Partenariat atelier
+        - heading "UN SITE, DEUX SAVOIR-FAIRE COMPLÉMENTAIRES" [level=2] [ref=e36]
+        - paragraph [ref=e37]: L'atelier travaille dans les mêmes locaux que la Carrosserie de Satigny SA. Ce partenariat nous permet de coordonner plus efficacement les travaux de tôlerie, peinture et finitions, avec l'avantage de pouvoir suivre des projets complets sur place, du démontage jusqu'à la remise à la route.
+      - generic [ref=e38]:
+        - generic [ref=e39]: Notre expertise
+        - heading "DES SERVICES COMPLETS" [level=2] [ref=e40]
+        - paragraph [ref=e41]: De la restauration intégrale à l'entretien courant, nous prenons soin de chaque véhicule américain avec la même passion.
+      - generic [ref=e42]:
+        - generic [ref=e44]:
+          - img [ref=e46]
+          - heading "CARROSSERIE" [level=3] [ref=e50]
+          - paragraph [ref=e51]: Travaux de tôlerie, peinture et finitions pour redonner vie à votre véhicule américain.
+        - generic [ref=e53]:
+          - img [ref=e55]
+          - heading "RESTAURATION COMPLÈTE" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Restauration intégrale dans le respect de l'authenticité d'origine, pièce par pièce.
+        - generic [ref=e60]:
+          - img [ref=e62]
+          - heading "MÉCANIQUE GÉNÉRALE" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Entretien, diagnostic et réparation mécanique pour moteurs américains classiques et modernes.
+        - generic [ref=e76]:
+          - img [ref=e78]
+          - heading "VÉHICULES US MODERNES" [level=3] [ref=e83]
+          - paragraph [ref=e84]: Préparation, entretien et adaptation de véhicules américains récents pour la Suisse.
+        - generic [ref=e86]:
+          - img [ref=e88]
+          - heading "RÉPARATION POST‑ACCIDENT" [level=3] [ref=e91]
+          - paragraph [ref=e92]: Remise en état complète après sinistre, en collaboration avec votre assurance.
+        - generic [ref=e94]:
+          - img [ref=e96]
+          - heading "IMPORTATION & HOMOLOGATION" [level=3] [ref=e100]
+          - paragraph [ref=e101]: "Import de véhicules américains et mise aux normes suisses : éclairages, compteurs et homologation complète."
+      - link "DÉCOUVRIR TOUS NOS SERVICES" [ref=e103] [cursor=pointer]:
+        - /url: services.html
+        - text: DÉCOUVRIR TOUS NOS SERVICES
+        - img [ref=e104]
+    - generic [ref=e108]:
+      - generic [ref=e109]:
+        - generic [ref=e110]: Grand chantier
+        - heading "MUSTANG FASTBACK 1968" [level=2] [ref=e111]
+        - paragraph [ref=e112]: Cette Fastback 1968 bleue fait partie des gros dossiers réalisés à l'atelier. Le chantier illustre notre approche de la tôlerie lourde, avec ouverture de carrosserie, découpe des zones atteintes, ajustements structurels et reconstruction progressive avant peinture et remontage.
+        - paragraph [ref=e113]: Le travail sur site avec la Carrosserie de Satigny SA nous permet d'enchaîner plus efficacement les phases de tôlerie, peinture et finition sur ce type de restauration exigeante.
+        - generic [ref=e114]:
+          - link "VOIR L'HISTOIRE DE L'ATELIER" [ref=e115] [cursor=pointer]:
+            - /url: a-propos.html
+            - text: VOIR L'HISTOIRE DE L'ATELIER
+            - img [ref=e116]
+          - link "PARLER D'UN PROJET" [ref=e118] [cursor=pointer]:
+            - /url: contact.html
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - img [ref=e123]
+            - generic [ref=e127]: FASTBACK 1968
+          - button "Image précédente" [ref=e128] [cursor=pointer]:
+            - img [ref=e129]
+          - button "Image suivante" [ref=e131] [cursor=pointer]:
+            - img [ref=e132]
+        - generic [ref=e134]:
+          - button "1" [ref=e135] [cursor=pointer]:
+            - generic [ref=e137]: "1"
+          - button "2" [ref=e138] [cursor=pointer]:
+            - generic [ref=e140]: "2"
+          - button "3" [ref=e141] [cursor=pointer]:
+            - generic [ref=e143]: "3"
+          - button "4" [ref=e144] [cursor=pointer]:
+            - generic [ref=e146]: "4"
+          - button "5" [ref=e147] [cursor=pointer]:
+            - generic [ref=e149]: "5"
+          - button "6" [ref=e150] [cursor=pointer]:
+            - generic [ref=e152]: "6"
+          - button "7" [ref=e153] [cursor=pointer]:
+            - generic [ref=e155]: "7"
+          - button "8" [ref=e156] [cursor=pointer]:
+            - generic [ref=e158]: "8"
+        - paragraph [ref=e159]: Vue générale du chantier en cours de tôlerie.
+    - generic [ref=e162]:
+      - heading "UN PROJET EN TÊTE ?" [level=2] [ref=e163]
+      - paragraph [ref=e164]: Contactez‑nous pour discuter de votre véhicule. Nous vous accompagnons à chaque étape, du diagnostic au résultat final.
+      - link "PRENDRE CONTACT" [ref=e165] [cursor=pointer]:
+        - /url: contact.html
+        - text: PRENDRE CONTACT
+        - img [ref=e166]
+  - contentinfo [ref=e168]:
+    - generic [ref=e169]:
+      - generic [ref=e170]:
+        - generic [ref=e171]:
+          - heading "ATELIER MAGNIN" [level=3] [ref=e172]
+          - paragraph [ref=e173]: Spécialiste véhicules américains classiques et modernes à Satigny, Genève. Passion, expertise et authenticité depuis des années.
+        - generic [ref=e174]:
+          - heading "NAVIGATION" [level=4] [ref=e175]
+          - generic [ref=e176]:
+            - link "Accueil" [ref=e177] [cursor=pointer]:
+              - /url: index.html
+            - link "Services" [ref=e178] [cursor=pointer]:
+              - /url: services.html
+            - link "À Propos" [ref=e179] [cursor=pointer]:
+              - /url: a-propos.html
+            - link "Véhicules en vente" [ref=e180] [cursor=pointer]:
+              - /url: vehicules.html
+            - link "Pièces en vente" [ref=e181] [cursor=pointer]:
+              - /url: pieces.html
+            - link "Contact" [ref=e182] [cursor=pointer]:
+              - /url: contact.html
+        - generic [ref=e183]:
+          - heading "CONTACT" [level=4] [ref=e184]
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: Satigny, Genève, Suisse
+            - paragraph [ref=e187]:
+              - link "+41 78 610 48 34" [ref=e188] [cursor=pointer]:
+                - /url: tel:+41786104834
+            - paragraph [ref=e189]:
+              - link "jeremy@ateliermagnincustom.com" [ref=e190] [cursor=pointer]:
+                - /url: mailto:jeremy@ateliermagnincustom.com
+      - generic [ref=e191]: © 2026 Atelier Magnin — Tous droits réservés
