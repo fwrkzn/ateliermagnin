@@ -49,11 +49,5 @@
       "destination": "/vehicules/ford-sport-ka",
       "permanent": true
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/vehicules/ford-sport-ka",
-      "destination": "/vehicule-sport-ka.html"
-    }
   ]
 }
