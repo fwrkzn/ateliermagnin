@@ -163,14 +163,14 @@ if (window.lucide) {
   const caption = document.getElementById('fastback-carousel-caption');
 
   const slides = [
-    { src: 'assets/chantiers/mustang-68-1.webp', alt: 'Mustang Fastback 1968 bleue en cours de tôlerie', caption: 'Vue générale du chantier en cours de tôlerie.' },
-    { src: 'assets/chantiers/mustang-68-2.webp', alt: 'Mustang Fastback 1968 bleue avec carrosserie ouverte', caption: 'Ouverture de carrosserie et reprise des zones atteintes.' },
-    { src: 'assets/chantiers/mustang-68-3.webp', alt: 'Mustang Fastback 1968 bleue avec éléments déposés', caption: 'Travail structurel avec éléments déposés et accès complet aux zones critiques.' },
-    { src: 'assets/chantiers/mustang-68-4.webp', alt: 'Mustang Fastback 1968 bleue pendant les découpes de tôlerie', caption: 'Découpes et reconstruction progressive des parties endommagées.' },
-    { src: 'assets/chantiers/mustang-68-5.webp', alt: 'Mustang Fastback 1968 bleue pendant les ajustements de carrosserie', caption: 'Ajustements de tôlerie avant préparation de surface.' },
-    { src: 'assets/chantiers/mustang-68-6.webp', alt: 'Mustang Fastback 1968 bleue avant la phase peinture', caption: 'Mise en forme et alignements avant peinture.' },
-    { src: 'assets/chantiers/mustang-68-7.webp', alt: 'Mustang Fastback 1968 bleue en phase de remontage', caption: 'Progression du dossier avant remontage final.' },
-    { src: 'assets/chantiers/mustang-68-8.webp', alt: 'Mustang Fastback 1968 bleue en fin de chantier', caption: 'Dernières étapes du chantier avant livraison.' }
+    { src: '/assets/chantiers/mustang-68-1.webp', alt: 'Mustang Fastback 1968 bleue en cours de tôlerie', caption: 'Vue générale du chantier en cours de tôlerie.' },
+    { src: '/assets/chantiers/mustang-68-2.webp', alt: 'Mustang Fastback 1968 bleue avec carrosserie ouverte', caption: 'Ouverture de carrosserie et reprise des zones atteintes.' },
+    { src: '/assets/chantiers/mustang-68-3.webp', alt: 'Mustang Fastback 1968 bleue avec éléments déposés', caption: 'Travail structurel avec éléments déposés et accès complet aux zones critiques.' },
+    { src: '/assets/chantiers/mustang-68-4.webp', alt: 'Mustang Fastback 1968 bleue pendant les découpes de tôlerie', caption: 'Découpes et reconstruction progressive des parties endommagées.' },
+    { src: '/assets/chantiers/mustang-68-5.webp', alt: 'Mustang Fastback 1968 bleue pendant les ajustements de carrosserie', caption: 'Ajustements de tôlerie avant préparation de surface.' },
+    { src: '/assets/chantiers/mustang-68-6.webp', alt: 'Mustang Fastback 1968 bleue avant la phase peinture', caption: 'Mise en forme et alignements avant peinture.' },
+    { src: '/assets/chantiers/mustang-68-7.webp', alt: 'Mustang Fastback 1968 bleue en phase de remontage', caption: 'Progression du dossier avant remontage final.' },
+    { src: '/assets/chantiers/mustang-68-8.webp', alt: 'Mustang Fastback 1968 bleue en fin de chantier', caption: 'Dernières étapes du chantier avant livraison.' }
   ];
 
   let current = 0;

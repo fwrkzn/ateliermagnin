@@ -1,5 +1,59 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/a-propos.html",
+      "destination": "/a-propos",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/pieces.html",
+      "destination": "/pieces",
+      "permanent": true
+    },
+    {
+      "source": "/vehicules.html",
+      "destination": "/vehicules",
+      "permanent": true
+    },
+    {
+      "source": "/vehicule-sport-ka.html",
+      "destination": "/vehicules/ford-sport-ka",
+      "permanent": true
+    },
+    {
+      "source": "/vehicles",
+      "destination": "/vehicules",
+      "permanent": true
+    },
+    {
+      "source": "/vehicles/ford-sport-ka",
+      "destination": "/vehicules/ford-sport-ka",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/vehicules/ford-sport-ka",
+      "destination": "/vehicule-sport-ka.html"
+    }
+  ]
 }

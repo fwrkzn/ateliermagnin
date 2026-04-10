@@ -6,11 +6,11 @@
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
   <title>Nos Services — Atelier Magnin | Satigny, Genève</title>
   <meta name="description" content="Carrosserie, restauration complète, mécanique générale, véhicules US modernes et réparation post-accident. Atelier Magnin, Satigny." />
-  <link rel="canonical" href="https://ateliermagnincustom.com/services.html" />
+  <link rel="canonical" href="https://ateliermagnincustom.com/services" />
   <meta property="og:title" content="Services — Atelier Magnin" />
   <meta property="og:description" content="Découvrez nos prestations : carrosserie, restauration, mécanique de véhicules américains." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://ateliermagnincustom.com/services.html" />
+  <meta property="og:url" content="https://ateliermagnincustom.com/services" />
   <meta property="og:image" content="https://ateliermagnincustom.com/assets/services/restauration.webp" />
   <meta property="og:locale" content="fr_CH" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -19,7 +19,7 @@
   <meta name="twitter:image" content="https://ateliermagnincustom.com/assets/services/restauration.webp" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="css/style.css?v=3" />
+  <link rel="stylesheet" href="/css/style.css?v=3" />
   <script src="https://unpkg.com/lucide@0.475.0/dist/umd/lucide.min.js"></script>
   <script type="application/ld+json">
     {
@@ -29,7 +29,7 @@
       "provider": {
         "@type": "AutoRepair",
         "name": "Atelier Magnin Custom Sàrl",
-        "url": "https://ateliermagnincustom.com/services.html",
+        "url": "https://ateliermagnincustom.com/services",
         "telephone": "+41786104834",
         "email": "jeremy@ateliermagnincustom.com"
       },
@@ -56,21 +56,21 @@
     <!-- Navbar -->
     <header class="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
       <div class="container flex items-center justify-between h-16">
-        <a href="index.html" class="font-heading text-2xl font-bold tracking-wider">ATELIER <span class="text-primary">MAGNIN</span></a>
+        <a href="/" class="font-heading text-2xl font-bold tracking-wider">ATELIER <span class="text-primary">MAGNIN</span></a>
         <nav class="hidden md:flex items-center gap-8">
-          <a href="index.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">Accueil</a>
-          <a href="services.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-primary">Services</a>
-          <a href="a-propos.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">À Propos</a>
+          <a href="/" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">Accueil</a>
+          <a href="/services" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-primary">Services</a>
+          <a href="/a-propos" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">À Propos</a>
           <div class="relative" id="dropdown-envente">
             <button onclick="document.getElementById('dropdown-envente').classList.toggle('open')" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground flex items-center gap-1">
               En vente <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform dropdown-chevron"></i>
             </button>
             <div class="dropdown-menu absolute top-full left-0 mt-2 bg-card border border-border rounded-md shadow-lg min-w-[160px] py-1 z-50">
-              <a href="vehicules.html" class="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-secondary transition-colors">Véhicules</a>
-              <a href="pieces.html" class="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-secondary transition-colors">Pièces</a>
+              <a href="/vehicules" class="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-secondary transition-colors">Véhicules</a>
+              <a href="/pieces" class="block px-4 py-2 text-sm text-foreground hover:text-primary hover:bg-secondary transition-colors">Pièces</a>
             </div>
           </div>
-          <a href="contact.html" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">Contact</a>
+          <a href="/contact" class="font-heading text-sm tracking-widest transition-colors hover:text-primary text-foreground">Contact</a>
         </nav>
         <button id="menu-toggle" class="md:hidden text-foreground">
           <i data-lucide="menu" id="icon-menu" class="w-6 h-6"></i>
@@ -79,19 +79,19 @@
       </div>
       <nav id="mobile-menu" class="md:hidden border-t border-border bg-background">
         <div class="container py-4 flex flex-col gap-4">
-          <a href="index.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">Accueil</a>
-          <a href="services.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-primary">Services</a>
-          <a href="a-propos.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">À Propos</a>
+          <a href="/" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">Accueil</a>
+          <a href="/services" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-primary">Services</a>
+          <a href="/a-propos" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">À Propos</a>
           <div>
             <button onclick="this.parentElement.classList.toggle('open')" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground flex items-center gap-1 mobile-dropdown-btn">
               En vente <i data-lucide="chevron-down" class="w-4 h-4 transition-transform dropdown-chevron"></i>
             </button>
             <div class="mobile-dropdown-menu pl-4 mt-2 flex flex-col gap-2">
-              <a href="vehicules.html" class="font-heading text-base tracking-widest text-muted-foreground hover:text-primary transition-colors">Véhicules</a>
-              <a href="pieces.html" class="font-heading text-base tracking-widest text-muted-foreground hover:text-primary transition-colors">Pièces</a>
+              <a href="/vehicules" class="font-heading text-base tracking-widest text-muted-foreground hover:text-primary transition-colors">Véhicules</a>
+              <a href="/pieces" class="font-heading text-base tracking-widest text-muted-foreground hover:text-primary transition-colors">Pièces</a>
             </div>
           </div>
-          <a href="contact.html" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">Contact</a>
+          <a href="/contact" class="font-heading text-lg tracking-widest transition-colors hover:text-primary text-foreground">Contact</a>
         </div>
       </nav>
     </header>
@@ -119,7 +119,7 @@
           <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <div class="overflow-hidden rounded-lg">
-                <img src="assets/services/bodyworks.webp" alt="Carrosserie" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+                <img src="/assets/services/bodyworks.webp" alt="Carrosserie" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
               </div>
             </div>
             <div>
@@ -140,7 +140,7 @@
           <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
             <div class="lg:order-2">
               <div class="overflow-hidden rounded-lg">
-                <img src="assets/services/restauration.webp" alt="Restauration Complète" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+                <img src="/assets/services/restauration.webp" alt="Restauration Complète" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
               </div>
             </div>
             <div class="lg:order-1">
@@ -158,7 +158,7 @@
           <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <div class="overflow-hidden rounded-lg">
-                <img src="assets/services/mechanical.webp" alt="Mécanique Générale" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+                <img src="/assets/services/mechanical.webp" alt="Mécanique Générale" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
               </div>
             </div>
             <div>
@@ -176,7 +176,7 @@
           <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
             <div class="lg:order-2">
               <div class="overflow-hidden rounded-lg">
-                <img src="assets/services/moderncars.webp" alt="Véhicules US Modernes" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+                <img src="/assets/services/moderncars.webp" alt="Véhicules US Modernes" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
               </div>
             </div>
             <div class="lg:order-1">
@@ -194,7 +194,7 @@
           <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <div class="overflow-hidden rounded-lg">
-                <img src="assets/services/postaccident.webp" alt="Réparation Post-Accident" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
+                <img src="/assets/services/postaccident.webp" alt="Réparation Post-Accident" class="w-full h-72 lg:h-80 object-cover" loading="lazy" />
               </div>
             </div>
             <div>
@@ -212,7 +212,7 @@
           <div class="animate-on-scroll grid lg:grid-cols-2 gap-8 items-center">
             <div class="lg:order-2">
               <div class="overflow-hidden rounded-lg">
-                <img src="assets/services/bikes.webp" alt="Bikes" class="w-full h-72 lg:h-80 object-cover object-[50%_75%]" loading="lazy" />
+                <img src="/assets/services/bikes.webp" alt="Bikes" class="w-full h-72 lg:h-80 object-cover object-[50%_75%]" loading="lazy" />
               </div>
             </div>
             <div class="lg:order-1">
@@ -236,7 +236,7 @@
           <p class="text-muted-foreground mb-8 max-w-md mx-auto">
             Décrivez‑nous votre projet et nous vous répondrons dans les meilleurs délais.
           </p>
-          <a href="contact.html" class="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading text-sm tracking-widest px-7 py-3.5 rounded hover:opacity-90 transition-opacity">
+          <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading text-sm tracking-widest px-7 py-3.5 rounded hover:opacity-90 transition-opacity">
             DEMANDER UN DEVIS <i data-lucide="arrow-right" class="w-4 h-4"></i>
           </a>
         </div>
@@ -257,12 +257,12 @@
           <div>
             <h4 class="font-heading text-sm tracking-widest mb-3 text-foreground">NAVIGATION</h4>
             <div class="flex flex-col gap-2">
-              <a href="index.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Accueil</a>
-              <a href="services.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Services</a>
-              <a href="a-propos.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">À Propos</a>
-              <a href="vehicules.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Véhicules en vente</a>
-              <a href="pieces.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Pièces en vente</a>
-              <a href="contact.html" class="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a>
+              <a href="/" class="text-sm text-muted-foreground hover:text-primary transition-colors">Accueil</a>
+              <a href="/services" class="text-sm text-muted-foreground hover:text-primary transition-colors">Services</a>
+              <a href="/a-propos" class="text-sm text-muted-foreground hover:text-primary transition-colors">À Propos</a>
+              <a href="/vehicules" class="text-sm text-muted-foreground hover:text-primary transition-colors">Véhicules en vente</a>
+              <a href="/pieces" class="text-sm text-muted-foreground hover:text-primary transition-colors">Pièces en vente</a>
+              <a href="/contact" class="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a>
             </div>
           </div>
           <div>
@@ -281,6 +281,6 @@
     </footer>
 
   </div>
-  <script src="js/main.js?v=2"></script>
+  <script src="/js/main.js?v=2"></script>
 </body>
 </html>
