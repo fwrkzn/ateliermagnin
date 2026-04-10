@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./*.html",
+    "./vehicules/**/*.html",
   ],
   theme: {
     container: {

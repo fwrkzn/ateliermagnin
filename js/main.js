@@ -267,14 +267,14 @@ if (window.lucide) {
   if (!galleryMain) return;
 
   const images = [
-    'assets/avendre_auto/sportka-1.webp',
-    'assets/avendre_auto/sportka-2.webp',
-    'assets/avendre_auto/sportka-3.webp',
-    'assets/avendre_auto/sportka-4.webp',
-    'assets/avendre_auto/sportka-5.webp',
-    'assets/avendre_auto/sportka-6.webp',
-    'assets/avendre_auto/sportka-7.webp',
-    'assets/avendre_auto/sportka-8.webp'
+    '/assets/avendre_auto/sportka-1.webp',
+    '/assets/avendre_auto/sportka-2.webp',
+    '/assets/avendre_auto/sportka-3.webp',
+    '/assets/avendre_auto/sportka-4.webp',
+    '/assets/avendre_auto/sportka-5.webp',
+    '/assets/avendre_auto/sportka-6.webp',
+    '/assets/avendre_auto/sportka-7.webp',
+    '/assets/avendre_auto/sportka-8.webp'
   ];
   let current = 0;
   const placeholder = document.getElementById('gallery-main-placeholder');

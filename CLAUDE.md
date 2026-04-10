@@ -5,7 +5,7 @@
 **Atelier Magnin** is a static marketing website for an automotive restoration and repair shop in **Satigny, Geneva, Switzerland**. The business focuses on **American vehicles**, **oldtimers**, and **special projects**, with strong emphasis on **Mustangs**, bodywork, restoration, and mechanical work.
 
 - **Language:** French only for public-facing content
-- **Deployment:** Netlify
+- **Deployment:** Vercel
 - **Primary contact:** `jeremy@ateliermagnincustom.com`
 - **Phone:** `+41 78 610 48 34`
 - **Location:** Satigny, Geneva, Switzerland
@@ -23,7 +23,7 @@
 | Icons | Lucide Icons via CDN |
 | Fonts | Google Fonts |
 | Forms | Netlify Forms + AJAX submit |
-| Deployment | Netlify |
+| Deployment | Vercel |
 | Build | `npm run build` |
 
 `package.json` scripts:
@@ -42,23 +42,28 @@ npm run build
 ├── index.html
 ├── a-propos.html
 ├── services.html
-├── vehicules.html
-├── vehicule-sport-ka.html
 ├── pieces.html
 ├── contact.html
 ├── robots.txt
 ├── sitemap.xml
+├── vercel.json
 ├── CLAUDE.md
 ├── css/
 │   ├── input.css
 │   └── style.css
 ├── js/
 │   └── main.js
+├── vehicules/
+│   ├── index.html
+│   └── ford-sport-ka/
+│       └── index.html
 ├── assets/
 │   ├── favicon.svg
 │   ├── hero-mustang.webp
 │   ├── mustang.webp
 │   ├── mustang2.webp
+│   ├── chantiers/
+│   │   └── mustang-68-1.webp ... mustang-68-8.webp
 │   ├── avendre_auto/
 │   │   └── sportka-1.webp ... sportka-8.webp
 │   └── services/
@@ -72,10 +77,6 @@ npm run build
 ├── tailwind.config.js
 └── package.json
 ```
-
-Note:
-- The site references `assets/chantiers/mustang-68-1.webp` through `mustang-68-8.webp` for the Fastback worksite gallery.
-- That folder may not exist yet in the repo; those image files are intended as drop-in placeholders for the client to add later.
 
 ---
 
@@ -119,7 +120,7 @@ CSS variables are defined in `css/input.css`.
 
 - Static responsive layout with Tailwind utility classes
 - Repeated spacing pattern:
-  - Mobile: `px-6`
+  - Mobile: `px-4`
   - Desktop: `md:px-12 lg:px-24`
 - Large content sections usually use `py-20` to `py-28`, but some compact modules now use smaller spacing
 
@@ -144,13 +145,14 @@ Current systems:
 
 ### Important interactive modules
 
-- `vehicule-sport-ka.html` uses the shared gallery logic in `main.js`
+- `vehicules/ford-sport-ka/index.html` uses the shared gallery logic in `main.js`
 - `index.html` contains a compact Fastback worksite gallery using:
   - `#fastback-carousel-main`
   - `.fastback-thumb`
   - `#fastback-carousel-prev`
   - `#fastback-carousel-next`
 - `contact.html` uses AJAX form submission and toast feedback
+- The site now uses clean root-relative URLs such as `/services`, `/vehicules`, and `/vehicules/ford-sport-ka`
 
 ---
 
@@ -179,6 +181,16 @@ If the production domain changes, update:
 - `robots.txt`
 - `sitemap.xml`
 - structured data URLs
+
+Current public URL structure:
+
+- `/`
+- `/services`
+- `/a-propos`
+- `/contact`
+- `/pieces`
+- `/vehicules`
+- `/vehicules/ford-sport-ka`
 
 ---
 
@@ -222,7 +234,7 @@ Services page with detailed blocks for:
 Important:
 - The large Fastback chantier module was removed from this page and moved to the homepage.
 
-### `vehicules.html`
+### `vehicules/index.html`
 
 Vehicle listing page.
 
@@ -232,7 +244,9 @@ Current visible listing:
 
 This page is commercially weak and may still need future cleanup if the inventory changes.
 
-### `vehicule-sport-ka.html`
+Public URL: `/vehicules`
+
+### `vehicules/ford-sport-ka/index.html`
 
 Vehicle detail page with:
 
@@ -242,6 +256,8 @@ Vehicle detail page with:
 - contact and call CTAs
 
 This page is currently the visual reference for compact gallery sizing.
+
+Public URL: `/vehicules/ford-sport-ka`
 
 ### `pieces.html`
 
