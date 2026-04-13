@@ -21,16 +21,16 @@
 | Styling | Tailwind CSS 3.4 + custom CSS |
 | JS | Vanilla JavaScript |
 | Icons | Lucide Icons via CDN |
-| Fonts | Google Fonts |
+| Fonts | Google Fonts (Oswald + Inter) |
 | Forms | Netlify Forms + AJAX submit |
-| Deployment | Vercel |
-| Build | `npm run build` |
+| Deployment | Vercel (`vercel.json` with `cleanUrls: true`) |
+| Build | `npm run build` (Tailwind compile) |
 
 `package.json` scripts:
 
 ```bash
-npm run dev
-npm run build
+npm run dev    # tailwindcss --watch
+npm run build  # tailwindcss --minify
 ```
 
 ---
@@ -49,8 +49,8 @@ npm run build
 ├── vercel.json
 ├── CLAUDE.md
 ├── css/
-│   ├── input.css
-│   └── style.css
+│   ├── input.css          (source — edit this)
+│   └── style.css          (compiled output — do not edit)
 ├── js/
 │   └── main.js
 ├── vehicules/
@@ -58,10 +58,15 @@ npm run build
 │   └── ford-sport-ka/
 │       └── index.html
 ├── assets/
+│   ├── logo.png
 │   ├── favicon.svg
 │   ├── hero-mustang.webp
 │   ├── mustang.webp
 │   ├── mustang2.webp
+│   ├── bodywork.webp
+│   ├── craftsmanship.webp
+│   ├── modern-us.webp
+│   ├── restoration.webp
 │   ├── chantiers/
 │   │   └── mustang-68-1.webp ... mustang-68-8.webp
 │   ├── avendre_auto/
@@ -75,7 +80,8 @@ npm run build
 │       └── restauration.webp
 ├── netlify.toml
 ├── tailwind.config.js
-└── package.json
+├── package.json
+└── package-lock.json
 ```
 
 ---
@@ -112,8 +118,8 @@ CSS variables are defined in `css/input.css`.
 
 ### Typography
 
-- Headings use the configured `font-heading`
-- Body text uses `font-body`
+- Headings use `font-heading` (Oswald)
+- Body text uses `font-body` (Inter)
 - The visual direction is bold, automotive, and editorial rather than generic SaaS
 
 ### Layout
@@ -128,7 +134,7 @@ CSS variables are defined in `css/input.css`.
 
 ## JavaScript Systems (`js/main.js`)
 
-The site’s main interactivity lives in `js/main.js`.
+The site's main interactivity lives in `js/main.js`.
 
 Current systems:
 
@@ -152,13 +158,37 @@ Current systems:
   - `#fastback-carousel-prev`
   - `#fastback-carousel-next`
 - `contact.html` uses AJAX form submission and toast feedback
-- The site now uses clean root-relative URLs such as `/services`, `/vehicules`, and `/vehicules/ford-sport-ka`
+- The site uses clean root-relative URLs such as `/services`, `/vehicules`, and `/vehicules/ford-sport-ka`
+
+### Important: image paths in JS
+
+All image paths in `main.js` must be **absolute (root-relative)** with a leading `/`, e.g. `/assets/avendre_auto/sportka-1.webp`. This is required because vehicle pages live in subdirectories (`vehicules/ford-sport-ka/`) and relative paths would resolve incorrectly.
+
+---
+
+## URL Routing
+
+Vercel `cleanUrls: true` strips `.html` extensions automatically for root-level pages.
+
+Vehicle pages use directory-based routing (`vehicules/index.html` and `vehicules/ford-sport-ka/index.html`).
+
+`vercel.json` includes redirects from old flat file paths (e.g. `/vehicule-sport-ka.html` → `/vehicules/ford-sport-ka`).
+
+Current public URL structure:
+
+- `/`
+- `/services`
+- `/a-propos`
+- `/contact`
+- `/pieces`
+- `/vehicules`
+- `/vehicules/ford-sport-ka`
 
 ---
 
 ## SEO Status
 
-The site now includes baseline SEO implementation across the main pages:
+The site includes baseline SEO implementation across all pages:
 
 - `canonical`
 - Open Graph tags
@@ -181,16 +211,6 @@ If the production domain changes, update:
 - `robots.txt`
 - `sitemap.xml`
 - structured data URLs
-
-Current public URL structure:
-
-- `/`
-- `/services`
-- `/a-propos`
-- `/contact`
-- `/pieces`
-- `/vehicules`
-- `/vehicules/ford-sport-ka`
 
 ---
 
@@ -236,7 +256,7 @@ Important:
 
 ### `vehicules/index.html`
 
-Vehicle listing page.
+Vehicle listing page. Public URL: `/vehicules`
 
 Current visible listing:
 
@@ -244,20 +264,14 @@ Current visible listing:
 
 This page is commercially weak and may still need future cleanup if the inventory changes.
 
-Public URL: `/vehicules`
-
 ### `vehicules/ford-sport-ka/index.html`
 
-Vehicle detail page with:
+Vehicle detail page. Public URL: `/vehicules/ford-sport-ka`
 
-- compact gallery on the left
-- specs/info on the right
-- 8-image image set
-- contact and call CTAs
-
-This page is currently the visual reference for compact gallery sizing.
-
-Public URL: `/vehicules/ford-sport-ka`
+- 2-column layout: gallery left, info right
+- 8-image gallery with thumbnails (4-column grid), prev/next arrows
+- specs grid (2-column), description, contact and call CTAs
+- CSS cache buster: `style.css?v=4`, JS: `main.js?v=3`
 
 ### `pieces.html`
 
@@ -291,6 +305,14 @@ Use these values consistently unless the user says otherwise:
 - **Region:** `Genève`
 - **Country:** `Suisse`
 
+**Logo:** The header uses `assets/logo.png` (red Mustang illustration with "Atelier Magnin Custom" text) displayed at `h-16` (64px) height across all pages.
+
+**Social links:**
+- **Instagram:** `https://www.instagram.com/ateliermagnincustom/`
+- **Facebook:** `https://www.facebook.com/p/Atelier-Magnin-Custom-61552613643047/`
+
+Social icons (Lucide `instagram` and `facebook`) appear in the footer CONTACT section on all pages.
+
 Partnership wording to preserve:
 
 - Atelier Magnin works in the same premises as **Carrosserie de Satigny SA**
@@ -312,12 +334,7 @@ assets/avendre_auto/sportka-8.webp
 
 ```text
 assets/chantiers/mustang-68-1.webp
-assets/chantiers/mustang-68-2.webp
-assets/chantiers/mustang-68-3.webp
-assets/chantiers/mustang-68-4.webp
-assets/chantiers/mustang-68-5.webp
-assets/chantiers/mustang-68-6.webp
-assets/chantiers/mustang-68-7.webp
+...
 assets/chantiers/mustang-68-8.webp
 ```
 
@@ -332,8 +349,10 @@ Current usage:
 
 - Edit `css/input.css`, not `css/style.css`
 - `css/style.css` is compiled output
+- Tailwind content paths: `./*.html` and `./vehicules/**/*.html` — if adding new HTML subdirectories, update `tailwind.config.js`
 - There is no JS bundler
 - HTML pages are standalone and linked directly
+- When bumping CSS/JS, update the `?v=` query string in the HTML `<link>` and `<script>` tags
 
 Build command:
 
@@ -345,7 +364,7 @@ npm run build
 
 ## Known State / Follow-up Opportunities
 
-- `vehicules.html` and `pieces.html` may still need stronger real inventory content
-- The site depends on client-provided Fastback images being added to `assets/chantiers/`
+- `vehicules/index.html` and `pieces.html` may still need stronger real inventory content
 - SEO is implemented, but the assumed canonical domain should be verified before launch
 - If adding new contact info, keep it consistent on every page footer and in structured data
+- Other root-level pages still use `style.css?v=3` — consider aligning cache busters across all pages
