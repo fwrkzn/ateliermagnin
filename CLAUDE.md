@@ -22,7 +22,7 @@
 | JS | Vanilla JavaScript |
 | Icons | Lucide Icons via CDN |
 | Fonts | Google Fonts (Oswald + Inter) |
-| Forms | Netlify Forms + AJAX submit |
+| Forms | Formspree (`xlgadrjv`) + AJAX submit |
 | Deployment | Vercel (`vercel.json` with `cleanUrls: true`) |
 | Build | `npm run build` (Tailwind compile) |
 
@@ -146,7 +146,7 @@ Current systems:
 6. **Lucide icon initialization**
 7. **Fastback home carousel**
 8. **Sport Ka vehicle gallery**
-9. **Netlify contact form AJAX submit**
+9. **Formspree contact form AJAX submit**
 10. **Toast notifications**
 
 ### Important interactive modules
@@ -271,7 +271,7 @@ Vehicle detail page. Public URL: `/vehicules/ford-sport-ka`
 - 2-column layout: gallery left, info right
 - 8-image gallery with thumbnails (4-column grid), prev/next arrows
 - specs grid (2-column), description, contact and call CTAs
-- CSS cache buster: `style.css?v=4`, JS: `main.js?v=3`
+- CSS cache buster: `style.css?v=4`, JS: `main.js?v=4`
 
 ### `pieces.html`
 
