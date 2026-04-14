@@ -323,14 +323,18 @@ if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(contactForm);
-    fetch('/', {
+    fetch('https://formspree.io/f/xlgadrjv', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString(),
+      headers: { 'Accept': 'application/json' },
+      body: formData,
     })
-      .then(() => {
-        showToast('Message envoyé', 'Nous vous répondrons dans les meilleurs délais.');
-        contactForm.reset();
+      .then((response) => {
+        if (response.ok) {
+          showToast('Message envoyé', 'Nous vous répondrons dans les meilleurs délais.');
+          contactForm.reset();
+        } else {
+          showToast('Erreur', 'Une erreur est survenue. Veuillez réessayer.');
+        }
       })
       .catch(() => {
         showToast('Erreur', 'Une erreur est survenue. Veuillez réessayer.');
