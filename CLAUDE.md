@@ -101,16 +101,19 @@ npm run build  # tailwindcss --minify
 
 ### Colors
 
-CSS variables are defined in `css/input.css`.
+CSS variables are defined in `css/input.css`. The color theme is **Swiss red + USA blue**:
+
+- `--primary`: Swiss red (`0 100% 40%`) — CTAs, accents
+- `--accent`: USA patriot blue (`220 80% 40%`) — secondary highlights, accent-foreground is white
 
 | Token | Purpose |
 | --- | --- |
 | `--background` | Main page background |
 | `--foreground` | Main text |
-| `--primary` | Accent / CTA color |
+| `--primary` | Swiss red — accent / CTA color |
 | `--primary-foreground` | Text on primary |
 | `--secondary` | Alternate section background |
-| `--accent` | Secondary highlight |
+| `--accent` | USA blue — secondary highlight |
 | `--card` | Card background |
 | `--muted` | Neutral panel background |
 | `--muted-foreground` | Secondary text |
@@ -138,7 +141,7 @@ The site's main interactivity lives in `js/main.js`.
 
 Current systems:
 
-1. **Page transition overlay**
+1. **Page transition overlay** — 5-slice scaleY animation using plain `--primary` red on each slice.
 2. **Mobile menu toggle**
 3. **Desktop/mobile dropdown accessibility state**
 4. **Outside-click dropdown closing**
